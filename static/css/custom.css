@@ -1,8 +1,8 @@
 
-body{
 
-}
 /** Navbar **/
+
+
 .nav-item{
 letter-spacing: .0.1em;
 font-size: 14px;
@@ -14,10 +14,12 @@ letter-spacing: .0.1em
 font-size: 12px;
 text-transform: uppercase;
 }
-/** footer page #f8f9fa **/
+/** footer page #f8f9fa #898b8f**/
 .my_footer{
-background-color : #ced1d9;
+background-color : black;
 height : 40px;
+margin-top:300px;
+color:white;
 }
 
 .my_footer p{

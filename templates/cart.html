@@ -14,7 +14,7 @@ Fashion
 <div>
     <div class="text-center">
         <br>
-        <h1 class="text-center my_title">
+        <h1 class="text-center my_title" style="margin-top:105px;">
             Your shopping cart is empty
         </h1>
         <br>
@@ -48,7 +48,9 @@ Fashion
             {% for cart_item in cart_items %}
             <tr>
                 <td>
-                    <a href="cart_item.product.get_absolute_url"><img src="{{cart_item.product.image.url}}" alt="" style="width:100px; height:100px ;" class="float-left rounded custom_image"></a>
+                    <div>
+                    <a href="#"><img src="{{cart_item.product.image.url}}" alt="" style="width:100px; height:100px ;" class="float-left rounded custom_image"></a>
+                    </div>
                 </td>
                 <td class="text-left">
                     {{cart_item.product.name}}
@@ -107,6 +109,7 @@ Fashion
         </table>
         <div class="mx-auto">
             <a href="{% url 'textile_app:allProdCat' %}" class="btn btn-secondary btn-block my_custom_table">Continue Shopping</a>
+            <a href="{% url 'textile_app:allProdCat' %}" class="btn btn-warning btn-block my_custom_table">Continue Payment</a>
 
         </div>
 {% endif %}
